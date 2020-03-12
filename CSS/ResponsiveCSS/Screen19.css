@@ -1,0 +1,10 @@
+/*Ecran 19 pouces*/
+@media only screen and (min-width: 1500px) and (max-width: 1600px) {
+  #full_calendar {
+	height: 580px;
+  }
+
+ .modal-content {
+	  width: 50%;
+	}
+}

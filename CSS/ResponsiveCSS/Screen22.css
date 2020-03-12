@@ -1,0 +1,9 @@
+
+/*Ecran 22 pouces*/
+@media only screen and (min-width: 1600px)and (max-width: 1800px){
+  
+  #full_calendar {
+	height: 730px;
+  }
+  
+}

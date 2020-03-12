@@ -1,0 +1,7 @@
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+  #full_calendar {
+	height: 400px;
+  }
+} 

@@ -1,0 +1,224 @@
+.calendar-item-running {
+	background-color: #f4b52f;
+	height: auto;
+	width: auto;
+	color: black;
+	padding: 15px;
+	font-size: 16px;
+	font-weight: 300;
+	display: block;
+	border-radius: 5px;
+	margin-top: 5px;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+
+.item-content-running > span {
+	display: block;
+}
+
+.calendar-item-cycling {
+	background-color: #00ff80;
+	height: auto;
+	width: auto;
+	color: black;
+	padding: 15px;
+	font-size: 16px;
+	font-weight: 300;
+	display: block;
+	border-radius: 5px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+.item-content-cycling > span {
+	display: block;
+}
+
+.calendar-item-swimming {
+	background-color: #0080ff;
+	height: auto;
+	width: auto;
+	color: black;
+	padding: 15px;
+	font-size: 16px;
+	font-weight: 300;
+	display: block;
+	border-radius: 5px;
+	margin-top: 5px;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+.item-content-swimming > span {
+	display: block;
+}
+
+.calendar-item-fitness {
+	background-color: #8080ff;
+	height: auto;
+	width: auto;
+	color: black;
+	padding: 15px;
+	font-size: 16px;
+	font-weight: 300;
+	display: block;
+	border-radius: 5px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+.item-content-fitness > span {
+	display: block;
+}
+
+.calendar-item-others {
+	background-color: #c0c0c0;
+	height: auto;
+	width: auto;
+	color: black;
+	padding: 15px;
+	font-size: 16px;
+	font-weight: 300;
+	display: block;
+	border-radius: 5px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+.item-content-others > span {
+	display: block;
+}
+
+.item-recap-totaltime > span {
+	display: block;
+}
+
+.item-recap-swim > span {
+	display: block;
+}
+.item-recap-bike > span {
+	display: block;
+}
+.item-recap-run > span {
+	display: block;
+}
+.calendar-recap-content {
+	padding: 10px;
+	height: auto;
+	width: auto;
+	color: white;
+}
+
+.item-recap-totaltime {
+	padding: 5px;
+}
+
+.span-recap-totaltime {
+	font-family: Helvetica,Arial,Verdana,sans-serif;
+    font-size: 13px;
+    font-weight: 600;   
+}
+
+.span-tt-time {
+	font-size: 12px;
+}
+
+.item-recap-swim {
+	padding: 5px;
+}
+
+.span-title-swim {
+	font-family: Helvetica,Arial,Verdana,sans-serif;
+    font-size: 13px;
+    font-weight: 600;   
+}
+
+.span-swim-km {
+	font-size: 12px;
+}
+
+.span-swim-time {
+	font-size: 12px;
+}
+
+.item-recap-bike {
+	padding: 5px;
+}
+
+.span-title-bike {
+	font-family: Helvetica,Arial,Verdana,sans-serif;
+    font-size: 13px;
+    font-weight: 600;   
+}
+
+.span-bike-km {
+	font-size: 12px;
+}
+
+.span-bike-time {
+	font-size: 12px;
+}
+.item-recap-run {
+	padding: 5px;
+}
+
+.span-title-run {
+	font-family: Helvetica,Arial,Verdana,sans-serif;
+    font-size: 13px;
+    font-weight: 600;   
+}
+
+.span-run-km {
+	font-size: 12px;
+}
+
+.span-run-time {
+	font-size: 12px;
+}
+
+.item-title {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.item-categorie {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.item-duree {
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.item-distance {
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.hover_app_activity {
+	height: 80px;
+	width: 100%;
+}
+
+.hover_app_activity:hover {
+	border: 2px solid grey;
+	cursor: crosshair;
+}
+
+.tableCalendar {
+	width: 100%;
+	display: none;
+	background-color: white;
+}
+
+.tableNBWeeks {
+	display: none;
+}
+
+.tableRecap {
+	display: none;
+}

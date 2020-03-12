@@ -1,0 +1,14 @@
+/*Ecran laptop*/
+@media only screen and (min-width: 1400px) and (max-width: 1500px) {
+  #full_calendar {
+	height: 505px;
+  }
+
+ .modal-content {
+	  width: 50%;
+	}
+	
+ .modalRepetition-content {
+ 	width: 28%;
+ }
+}

@@ -1,0 +1,175 @@
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+	
+	#Logo {
+	    width: 50%;
+	}
+	
+	#user_infos {
+		width: 43%;
+	    float: left;
+	    margin-right: 0px;
+	}
+	
+	#user_Name {
+		display: none;
+	}
+	
+	#ActiveWeek {
+		display: none;
+	}
+	
+	#changingMonth{
+		display: none;
+		text-align: center;
+	}
+	
+	#addActivite {
+		width: 100%;
+		text-align: center;
+	}
+	
+	#btnAddActivity {
+		margin: auto;
+		float: none;
+	    border-radius: 60px;
+	    width: 170px;
+	    text-align: center;
+	}
+	
+	#days_table {
+		font-size: 8px;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+	}
+	
+	#tbl1 {
+		width: 5%;
+	}
+	
+	#tbl2 {
+		width: 95%;
+	}
+	
+	#tbl2 th {
+		width: 9%;
+	}
+	
+	#tbl3 {
+		display: none;
+	}
+	
+	#full_calendar {
+		height: 500px;
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+	}
+	
+	#full_calendar th {
+		display: none;
+	}
+	
+	#left_table {
+		float: left;
+		width: 5%;
+	}
+	
+	#center_table {
+		float: left;
+		width: 95%;
+	}
+	
+	#right_table {
+		display: none;
+	}
+	
+	.tableNBWeeks td {
+		height: 100px;
+	}
+	
+	.windows_Calendar {
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+	
+	.daynumber {
+		padding: 3px;
+		height: 100px;
+		width: 48px;
+	}
+	
+	.item-title {
+		font-size: 9px;
+		font-weight: bold;
+	}
+	.item-categorie {
+		font-size: 9px;
+		font-weight: bold;
+	}
+
+	.item-duree {
+		font-size: 8px;
+		font-weight: normal;
+	}
+	
+	.item-distance {
+		font-size: 8px;
+		font-weight: normal;
+	}
+	
+	.hover_app_activity {
+		display: none;
+	}
+		
+	.calendar-item-running {
+		padding: 4px;
+	}
+	
+	.calendar-item-cycling {
+		padding: 4px;
+	}
+	
+	.calendar-item-swimming {
+		padding: 4px;
+	}
+	
+	.calendar-item-fitness {
+		padding: 4px;
+	}
+	
+	.calendar-item-others {
+		padding: 4px;
+	}
+	
+	.modal-content {
+	  position: relative;	
+	  background-color: #fefefe;
+	  margin: 2% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
+	  border: 0.5px solid #888;
+	  width: 100%;
+	  height: fit-content; /* Could be more or less, depending on screen size */
+	  padding-left: 20px;
+	  padding-right: 20px;
+	  padding-bottom: 20px;
+	  overflow: auto;
+	}
+	
+	.activityInline {
+	    display: inline;
+	}
+	
+	input[type="date"] {
+		width: 80%;
+	}
+	
+	.activityDescription_style {
+		border: solid 0.5px grey;
+    	padding: 5px;
+	}
+	
+	#delete_button {
+    padding: 0px;
+	}
+	
+}

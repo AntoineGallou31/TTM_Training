@@ -1,0 +1,607 @@
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+@font-face {
+  font-family: BebasRegular;
+  src: url(Fonts/BebasNeue-Regular.otf);
+}
+
+#body {
+	background-color: #f0f0f8;
+    padding: 0px;
+    font-family: 'Montserrat',Helvetica,Arial,Verdana,sans-serif;
+    font-size: 14px;
+    margin: 0px;
+  }
+
+header {
+	width: 100%;
+	background-color: #0a1f2e;
+	border: 0px;
+	height: 60px;
+	padding: 0px;
+	margin: 0px;
+}
+
+#Logo {
+	margin-left: 10px;
+	width: 173px;
+	float: left;
+	height: 60px;
+}
+
+#ImgTTM {
+	margin-top: 10px;
+	width: 30px;
+	height: 35px;
+	float: left;
+}
+
+#logotext {
+	font-size: 25px;
+	font-weight: 400;
+	margin-left: 10px;
+	margin-top: 12px;
+	float: left;
+	letter-spacing: -1px;
+	color: white;
+	width: 120px;
+}
+
+#user_infos {
+	width: 30%;
+    float: right;
+    height: 60px;
+    margin-right: 10px;
+}
+
+#user_Name {
+	float: left;
+    font-size: 15px;
+    text-align: right;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    width: 95%;
+    padding-right: 5%;
+}
+
+#deconnexion {
+	float: right;
+	height: 60px;
+    width: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 5%;
+}
+
+#imageconnexion {
+	width: 20px;
+	height: 20px;
+}
+
+#main {
+	margin: 0px;
+	padding: 0px;
+}
+
+#topCalendar {
+	width: 100%;
+	background-color: #f0f0f8;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	height: 60px;
+}
+
+#ActiveWeek {
+	height: 40px;
+	float: left;
+	width: 25%;
+}
+
+#ActiveWeeklink {
+	margin-left: 70px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	background-color: #f0f0f8;
+	padding: 12px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	color: #808080;
+	border-radius:28px;
+	width: 150px;
+	height: 40px;
+	font-size: 12px;
+	border: 2px solid grey;
+}
+
+#ActiveWeeklink:hover {
+	border: 2px solid #0080ff;
+	color: #0080ff;
+}
+
+#changingMonth{
+	float: left;
+	width: 50%;
+	height: 40px;
+	text-align: center;
+}
+
+#leftArrow {
+	float: left;
+	padding: 10px 0px 10px 0px;
+    cursor: pointer;
+    height: 40px;
+    width: fit-content;
+    user-select: none;
+}
+
+#TextChangingPreviousYear {
+	float: right;
+	padding: 0px 2px 0px 2px;
+}
+
+#IconLeftArrow{
+	width: 20px;
+    height: 20px;
+    transform: rotate(180deg);
+}
+
+#changingMonth-content {
+	user-select: none;
+	font-family: 'BebasRegular';
+	font-size: 25px;
+	margin-bottom: 2.5px;
+	margin-top: 2.5px;
+	float: left;
+    width: 80%;
+}
+
+#rightArrow {
+	float: left;
+    width: fit-content;
+    padding: 10px 0px 10px 0px;
+    cursor: pointer;
+    height: 40px;
+    user-select: none;
+}
+
+#TextChangingNextYear {
+	float: left;
+	padding: 0px 2px 0px 2px;
+}
+
+#IconRightArrow{
+	width: 20px;
+    height: 20px;
+}
+
+#addActivite {
+	height: 40px;
+	float: left;
+	width: 25%;
+}
+
+#btnAddActivity {
+	float: right;
+	margin-right: 70px;
+	background-color:#0080ff;
+	border-radius:28px;
+	border: 0px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:12px;
+	padding:12px 10px;
+	text-decoration:none;
+	width: 200px;
+	font-family: 'Montserrat', sans-serif;	
+	height: 40px;
+	font-weight: 600;
+}
+
+#btnAddActivity:hover {
+	background-color:#006fdd;
+}
+
+#sidebar {
+	font-family: 'Montserrat', sans-serif;
+	float: left;
+	width: 13%;
+	background-color: #282828;
+	height: 900px;
+	color: #f2ffe3;
+}
+
+#MainCalendar {
+	float: left;
+	width: 87%;
+}
+
+#days_table {
+	width: 100%;
+	background-color: white;
+	float: left;
+	border: 1px solid #dddddd;	
+	font-family: 'Montserrat',Helvetica,Arial,Verdana,sans-serif;
+}
+
+#tbl1 {
+	float: left;
+	width: 2%;
+	height: 40px;
+}
+
+#tbl2 {
+	float: left;
+	width: 85%;
+	height: 40px;
+}
+
+#tbl2 th {
+	width: 14.3%;
+}
+
+#tbl3 {
+	float: left;
+	width: 12%;
+	height: 40px;
+}
+
+#full_calendar {
+	width: 100%;
+	overflow: auto;
+	scroll-behavior: smooth;
+	height: 750px;
+	border: 1px solid #dddddd;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+#full_calendar th {
+	display: none;
+}
+
+#left_table {
+	float: left;
+	width: 2%;
+}
+
+#center_table {
+	float: left;
+	width: 86%;
+}
+
+#right_table {
+	float: left;
+	width: 12%;
+}
+
+.tableCalendar {
+	position: relative;
+    background-color: white;
+	border: 1px solid #dddddd;
+	width: 100%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+.tableNBWeeks {
+    background-color: white;
+	border: 1px solid #dddddd;
+	width: 100%;
+	text-align: center;
+	border-bottom-left-radius: 10px;
+}
+
+.tableNBWeeks td {
+	border: 1px solid #dddddd;
+	height: 250px;
+	max-height: 250px;
+}
+
+.tableRecap {
+    background-color: white;
+	border: 1px solid #dddddd;
+	width: 100%;
+	border-bottom-right-radius: 10px;
+}
+
+.tableRecap td {
+	background-color: #999999;
+	border: 1px solid #dddddd;
+	width: 100%;
+	height: 250px;
+	max-height: 250px;
+}
+
+.daynumber {
+	vertical-align: top;
+	padding: 5px;
+	font-weight: bold;
+	cursor: auto;
+	height: 250px;
+	max-height: 250px;
+	overflow: auto;
+	border: 1px solid #dddddd;
+	width: 14.3%;
+}
+
+.sidedarContainerTitle {
+	width: 100%;
+	height: 50px;
+}
+
+.sidedarTitle {
+	display: inline-block;
+	text-align: center;
+	font-size: 20px;
+	width: 100%;
+	height: 50px;
+	padding: 10px;
+}
+
+.search_container {
+	width: 100%;
+	height: 40px;
+	border-top: solid #3e3e3e 1px;
+	border-bottom: solid #3e3e3e 1px;
+	text-align: center;
+}
+
+.search_form{
+	width: 100%;
+	display: inline-flex;
+	padding: 10px 30px 10px 30px;
+}
+
+#SidebarButtonSearch {
+	display: none;
+	width: 10%;
+    height: 19px;
+}
+
+.container_athlete {
+	height: 50px;
+    padding: 15px 30px 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: solid #3e3e3e 1px;
+	cursor: pointer;
+	background-color: #282828;
+}
+
+.container_athlete:hover {
+	background-color: #3e3e3e;
+}
+
+.athlete_prenom {
+	padding-right: 5px;
+}
+
+.windows_Calendar {
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.modalRepetition {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+}
+
+.modalRepetition-content {
+	position: relative;
+    background-color: #fefefe;
+    margin: 10% auto 5% auto;
+    border: 0.5px solid #888;
+    width: 20%;
+    height: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    overflow: auto;
+    border-radius: 15px;
+}
+
+#ModalRepetitionChoice1Title {
+	padding: 20px 20px 20px 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#ModalRepetitionChoice2Title {
+	padding: 15px 0px 15px 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#input1 {
+	padding: 10px;
+}
+
+#input2 {
+	padding: 10px;
+}
+
+#inputEndUntilWeek {
+	appearance: none;
+    -webkit-appearance: none;
+    color: #95a5a6;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 17px;
+    border: 1px solid #ecf0f1;
+    background: #ecf0f1;
+    padding: 5px;
+    display: inline-block;
+    visibility: visible;
+    border-radius: 4px;
+}
+
+#confirmOrcancelContainer {
+	text-align: center;
+    padding: 30px 20px 30px 20px;
+}
+
+#CancelButton {
+	padding: 8px;
+    width: 30%;
+    border-radius: 4px;
+    background-color: #a4a4a4;
+    border: none;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0px 15px 0px 15px;
+}
+
+#CancelButton:hover {
+    background-color: #9a9a9a;
+}
+
+#ConfirmButton {
+	padding: 8px;
+    width: 30%;
+    border-radius: 4px;
+    background-color: #0080ff;
+    border: none;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0px 15px 0px 15px;
+}
+
+#ConfirmButton:hover {
+    background-color: #006cd9;
+}
+
+.BtnRecurrenceStyle {
+	padding: 10px;
+    border: solid 0.1px lightgray;
+    border-radius: 3px;
+    background-color: lightgray;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.BtnRecurrenceStyle:hover {
+	background-color: gray;
+}
+
+#loader {
+  display: none;
+  position: absolute;
+  left: 54%;
+  top: 50%;
+  z-index: 2;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); 
+ }
+}
+
+#BackgroundOpacity {
+	position: fixed;
+	left: 13%;
+	width: 87%;
+	height: 900px;
+	z-index: 1;
+	background-color: rgba(0,0,0,0.8);
+}
+
+.menu {
+  width: 140px;
+  z-index: 1;
+  box-shadow: 0 4px 5px 3px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  display: none;
+  transition: 0.2s display ease-in;
+  height: fit-content;
+}
+
+.menu-options {
+    list-style: none;
+    z-index: 1;
+    background-color: white;
+ }
+    
+.menu-option {
+  font-weight: 500;
+  z-index: 1;
+  font-size: 14px;
+  padding: 10px 40px 10px 20px;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  }
+
+.menu-option:hover {
+  background: rgba(0, 0, 0, 0.2);
+  }
+
+@keyframes move{
+  from{
+    transform: translate(0%);
+  }
+  50%{
+    transform: translate(-40%);
+  }
+  to{
+    transform: transform(0%);
+  }
+}
+
+BtnRecurrenceStyle {
+	padding: 6px;
+    border: solid 0.1px lightgray;
+    border-radius: 3px;
+    background-color: lightgray;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.BtnRecurrenceStyle:hover {
+	background-color: gray;
+}
+
+#SidebarInputText {
+	width: 80%;
+    margin-top: 10px;
+}
